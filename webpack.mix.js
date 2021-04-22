@@ -35,4 +35,5 @@ mix
             debug: false
         }
     })
-    .setPublicPath('dist');
+    .setPublicPath('dist')
+    .disableSuccessNotifications();
