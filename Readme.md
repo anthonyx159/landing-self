@@ -25,3 +25,15 @@ Lee la documentación aqui: https://laravel-mix.com/docs/5.0
     * Es recomendable siempre usar las dependencias de JS o CSS desde package.json para manejar librerias, de este modo podemos mantenerlas actualizadas y mantener la compatibilidad entre versiones.
     
     * En el package.json tambien podemos usar la entrada `browserslist` para manejar las versiones de browsers compatibles. Aumentar o disminuir nuestro rango de compatibilidad hara crecer el css o js resultante por el polyfills, prefixer y otros factores.
+    
+1. Notas sobre pug:
+    - Cada pug es un html que serian como tus secciones de la web, paginas individuales, por ejemplo, actualmente hay:
+        
+        * src/pug/test.pug
+        * src/pug/index.pug
+
+     - si quieres otra web mas añades:
+
+        * src/pug/contactanos.pug
+        
+        * Esto genera en tu localserver un /contactanos.html, que al visitarlo vas a ver el contenido el pug respectivo
