@@ -1,0 +1,151 @@
+// $midnight: #2c3e50;
+// $clouds: #ecf0f1;
+// // General
+// body {
+//   color: $midnight;
+//   background: $clouds;
+//   padding: 0 1em 1em;
+// }
+// h1 {
+//   margin: 0;
+//   line-height: 2;
+//   text-align: center;
+// }
+// h2 {
+//   margin: 0 0 .5em;
+//   font-weight: normal;
+// }
+// input {
+//     // lo que hace es mostrat o no el bloque 
+//   position: absolute;
+//   opacity: 0;
+//   z-index: -1;
+// }
+// // Layout
+// .row {
+//   display:flex;
+//   .col {
+//     flex:1;
+//     &:last-child {
+//       margin-left: 1em;
+//     }
+//   }
+// }
+// /* Accordion styles */
+// .tabs {
+//   border-radius: 8px;
+//   overflow: hidden;
+//   box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+// }
+// .tab {
+//   width: 100%;
+//   color: white;
+//   overflow: hidden;
+//   &-label {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 1em;
+//     background: $midnight;
+//     font-weight: bold;
+//     cursor: pointer;
+//     /* Icon */
+//     &:hover {
+//       background: darken($midnight, 10%);
+//     }
+//     &::after {
+//       content: "\00BB";
+//       width: 1em;
+//       height: 1em;
+//       text-align: center;
+//       transition: all .35s;
+//     }
+//   }
+//   &-content {
+//     max-height: 0;
+//     padding: 0 1em;
+//     color: $midnight;
+//     background: white;
+//     transition: all .35s;
+//   }
+//   &-close {
+//     display: flex;
+//     justify-content: flex-end;
+//     padding: 1em;
+//     font-size: 0.75em;
+//     background: $midnight;
+//     cursor: pointer;
+//     &:hover {
+//       background: darken($midnight, 10%);
+//     }
+//   }
+// }
+
+// // :checked
+// input:checked {
+//   + .tab-label {
+//     background: darken($midnight, 10%);
+//     &::after {
+//       transform: rotate(90deg);
+//     }
+//   }
+//   ~ .tab-content {
+//     max-height: 100vh;
+//     padding: 1em;
+//   }
+// }
+
+.form-container {
+  margin: 80px auto;
+  width: 500px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: #1c94ff;
+  padding: 4px 8px;
+  border: none;
+  box-shadow: 2px 1px 1px #d3d3d3;
+  color: #fff;
+  outline: none;
+  font-size: 17px;
+  cursor: pointer;
+  width: 100%
+}
+
+label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.form-group .form-control {
+  width: 100%;
+  outline: none;
+  padding: 5px;
+  border: none;
+  background: #d1d1d1;
+  border-bottom: 2px solid #1c94ff;
+  font-size: 16px;
+}
+
+.has-success .form-control {
+  border-bottom: 2px solid #168b3f;
+}
+
+.has-danger .form-control {
+  border-bottom: 2px solid #dc1d34;
+}
+
+.form-group .text-help {
+  color: #dc1d34;
+}
+
+.inline-label label{
+  display: inline;
+}
+
+.pristine-error {
+  display: table;
+}
