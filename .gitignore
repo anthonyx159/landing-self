@@ -1,7 +1,7 @@
 package-lock.json
 mix-manifest.json
 node_modules
-dist
 build
+src/js/library/dist/
 .idea
 .vscode
