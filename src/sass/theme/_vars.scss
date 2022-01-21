@@ -1,0 +1,47 @@
+// Colors
+$black: #000;
+$blue: #93e2ff;
+$white: #fff;
+
+// Default
+$primary: $blue;
+$secundary: $black;
+$color-default: $primary;
+
+// Font weights
+$font-light: 300;
+$font-regular: 'normal';
+$font-medium: 600;
+$font-bold: 700;
+$font-black: 900;
+
+// Text
+$line-height: 1.5;
+$font-default: 16px;
+$letter-spacing: 0.005em;
+$font-family: 'Roboto', sans-serif;
+$font-family-secondary: 'Roboto', sans-serif;
+$body-background: $primary;
+$color-link: $secundary;
+$color-link-hover: $secundary;
+
+$color-title: $secundary;
+$font-family-title: $font-family;
+$font-size-h1: 25px;
+$font-size-h2: 28px;
+$font-size-h3: 20px;
+$font-size-h4: 20px;
+$font-size-h5: 18px;
+$font-size-h6: 16px;
+
+// z-index global
+$zindex: (
+  header: 98,
+  overlay: 99,
+  drawer: 100,
+);
+
+$sizesHeader: (
+  desktop: 70px,
+  mobile: 62px
+);

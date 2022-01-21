@@ -1,0 +1,38 @@
+.button {
+    color: #ff525d !important;
+    font-size: .9em;
+    border-radius: 130px;
+    background-color: $white;
+    padding: 13px 35px;
+    text-decoration: none;
+}
+
+.button-start {
+    padding: 11px 14px;
+    font-weight: bold;
+    transition: 0.2s all ease-out;
+
+    &:hover {
+        background: #ffffff2e;
+        color: $white !important;
+    }
+}
+
+.button-learn {
+    padding: 11px 18px;
+    font-weight: bold;
+    background-color: transparent;
+    color: $white !important;
+    border: 1px solid $white;
+    transition: 0.2s all ease-out;
+
+    &:hover {
+        background-color: $white;
+        color: #ff525d !important;
+    }
+}
+
+.button-orange {
+    background: linear-gradient(120deg,#ff886f,#ff3d54);
+    color: $white !important;
+}

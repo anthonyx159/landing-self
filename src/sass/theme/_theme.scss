@@ -1,0 +1,204 @@
+html{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+    color: $secundary;
+    position: relative;
+    font-size: $font-default;
+    font-weight: $font-regular;
+    line-height: $line-height;
+    font-family: $font-family;
+    background-color: $primary;
+    background: linear-gradient($primary 14.15%, $primary 47.32%, $white 102.78%);
+    background-attachment: fixed;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: $letter-spacing;
+
+    @include responsive-width (301px) {
+        overflow-x: hidden;
+    }
+}
+
+a {
+    color: $color-link;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+}
+
+p {
+    font-family: $font-family-secondary;
+}
+
+small {
+    font-size: 70%;
+}
+
+b,
+strong {
+    font-weight: $font-bold;
+}
+
+em {
+    font-style: italic;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+
+    li {
+        margin: 0 0 10px;
+        position: relative;
+        padding: 0 0 0 15px;
+    }
+}
+
+h1,
+.m-h1 {
+    font-size: $font-size-h1;
+
+    @include responsive-width($laptop_s) {
+        font-size: $font-size-h1 + 8;
+    }
+}
+
+h2,
+.m-h2 {
+    font-size: $font-size-h2;
+
+    @include responsive-width($laptop_s) {
+        font-size: $font-size-h2 + 5;
+    }
+}
+
+h3,
+.m-h3 {
+    font-size: $font-size-h3;
+
+    @include responsive-width($laptop_s) {
+        font-size: $font-size-h3 + 5;
+    }
+}
+
+h4,
+.m-h4 {
+    font-size: $font-size-h4;
+
+    @include responsive-width($laptop_s) {
+        font-size: $font-size-h4 + 5;
+    }
+}
+
+h5,
+.m-h5 {
+    font-size: $font-size-h5;
+
+    @include responsive-width($laptop_s) {
+        font-size: $font-size-h5 + 6;
+    }
+}
+
+h6,
+.m-h6 {
+    font-size: $font-size-h6;
+
+    @include responsive-width($laptop_s) {
+        $font-size-h6: $font-size-h6;
+        font-size: $font-size-h6 + 6;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    line-height: 1.13;
+    margin-bottom: 20px;
+    color: $color-title;
+    font-weight: $font-bold;
+    font-family: $font-family;
+
+    @include responsive-width($mobile_l) {
+        line-height: 1.02;
+        margin-bottom: 30px;
+    }
+
+    &.m--normal {
+        font-weight: normal;
+
+        strong {
+            font-weight: $font-bold;
+        }
+    }
+}
+
+.m-container {
+    width: auto;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+
+    @include responsive-width($mobile_l) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @include responsive-width($tablet_m) {
+        padding-left: 0;
+        padding-right: 0;
+        width: $container-tablet-m;
+    }
+
+    @include responsive-width($laptop_s) {
+        width: $container-laptop-s;
+    }
+
+    @include responsive-width($laptop_m) {
+        width: $container;
+    }
+}
+
+.m-content{
+    @include responsive-width($tablet_m) {
+        margin: 0 auto;
+        width: $container-tablet-m;
+        height: 100%;
+        position: relative;
+    }
+
+    @include responsive-width($laptop_s) {
+        width: $container-laptop-s;
+    }
+
+    @include responsive-width($laptop_m) {
+        width: $container;
+    }
+}
+
+.d-none {
+    display: none;
+}

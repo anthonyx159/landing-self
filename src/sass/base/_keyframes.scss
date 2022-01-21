@@ -1,0 +1,32 @@
+@keyframes m-growingHand {
+    0%{
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(.75);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes m-pulse {
+    $pulse-color: $white;
+    $pulse-alpha: .3;
+
+    0% {
+        box-shadow: 
+        0 0 0 0 rgba($color: $pulse-color, $alpha: $pulse-alpha),
+        0 0 0 0 rgba($color: $pulse-color, $alpha: $pulse-alpha);
+    }
+    50% {
+        box-shadow: 
+        0 0 0 0 rgba($color: $pulse-color, $alpha: 0),
+        0 0 0 0 rgba($color: $pulse-color, $alpha: $pulse-alpha);
+    }
+    100% {
+        box-shadow: 
+        0 0 0 50px rgba($color: $pulse-color, $alpha: 0),
+        0 0 0 30px rgba($color: $pulse-color, $alpha: 0);
+    }
+}

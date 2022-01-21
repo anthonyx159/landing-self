@@ -1,0 +1,114 @@
+.header {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    &__hamburger {
+        display: none;
+
+        @include responsive-max-width($tablet_m) {
+            display: inline-block;
+        }
+
+        .menu-hamburger {
+            position: relative;
+            width: 32px;
+            height: 32px;
+        }
+
+        .svg-hamburger, .svg-close {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1115px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__left {
+        display: flex;
+
+    }
+
+    &__menu-left {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-size: 13.3px;
+        color: #e6e6e6;;
+
+        @include responsive-max-width($tablet_m) {
+            display: none;
+        }
+
+        &>li {
+            margin: 0 5px;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: .2s color ease-out;
+     
+            span, svg {
+                margin: 0 3px;
+            }
+
+            span {
+                border-bottom: 1px solid transparent;
+                transition: .2s all ease-out;
+            }
+
+            svg path {
+                transition: .2s all ease-out;
+            }
+        }
+        
+        a:hover {
+            color: $white;
+            
+            span {
+                border-bottom: 1px solid $white;
+            }
+
+            svg path {
+                stroke: $white
+            }
+        }
+    }
+
+    &__right {
+        @include responsive-max-width($tablet_m) {
+            display: none;
+        }
+    }
+
+    &__menu-right {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin: 0 13px;
+            white-space: nowrap;
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+}

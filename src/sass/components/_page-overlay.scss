@@ -1,0 +1,21 @@
+.page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s opacity ease-out;
+}
+
+body.page-overlay-shown {
+    .page-overlay {
+        opacity: 0.9;
+        pointer-events: auto;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgb(37 37 37 / 75%);
+        z-index: 99;
+    }
+}

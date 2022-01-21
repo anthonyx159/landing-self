@@ -1,0 +1,38 @@
+.nav-mobile {
+    &-list {
+        list-style: none;
+        padding: 0;
+        margin: 16px 0 32px;
+
+        li {
+            padding: 15px 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1f3f5b;
+
+            span, svg {
+                margin: 0 3px;
+            }
+        }
+    }
+
+    &-buttons {
+        list-style: none;
+        padding: 16px 0;
+        border-top: 1px solid #c8c8cb;
+        width: 85%;
+        margin: 0 auto;
+
+        li {
+            padding: 10px 5px;
+        }
+
+        a {
+            color: #1f3f5b;
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
+}

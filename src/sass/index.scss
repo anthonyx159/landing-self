@@ -1,5 +1,23 @@
 /**
 MAIN SCSS
- */
+*/
+// base
+@import './theme/vars';
+@import './base/base.scss';
+// @import './theme/theme';
+
 @import "./modules/common";
 @import "./modules/typography";
+@import "./modules/accordion";
+
+
+// sections
+@import './sections/header';
+@import './sections/banner';
+@import './sections/footer';
+
+// components
+@import './components/button';
+@import './components/nav-mobile';
+@import './components/drawer';
+@import './components/page-overlay';

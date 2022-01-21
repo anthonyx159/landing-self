@@ -20,6 +20,7 @@
     "jquery": "^3.5.0",
     "jquery-validation": "^1.19.2",
     "lazyload": "^2.0.0-rc.2",
+    "normalize.css": "^8.0.1",
     "sweetalert2": "^10.12.5"
   },
   "devDependencies": {

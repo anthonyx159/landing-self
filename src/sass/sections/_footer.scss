@@ -1,0 +1,96 @@
+.footer {
+    background-color: #25252d;
+    border-top-right-radius: 100px;
+    height: 360px;
+
+    @include responsive-max-width($tablet_m) {
+        height: 785px;
+    }
+
+    &__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        @include responsive-max-width($tablet_m) {
+            justify-content: center;
+        }
+    }
+
+    &__content {
+        max-width: 1440px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        @include responsive-max-width($tablet_m) {
+            align-items: center;
+            margin: unset;
+            justify-content: unset;
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        margin-right: 120px;
+
+        @include responsive-max-width($tablet_m) {
+            margin-right: unset;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        width: 800px;
+        justify-content: space-between;
+
+        @include responsive-max-width($tablet_m) {
+            width: unset;
+            justify-content: unset;
+            flex-direction: column;
+        }
+    }
+
+    &__product, &__company, &__connect {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        color: $white;
+        margin-bottom: 25px;
+        text-align: left;
+        font-weight: 600;
+
+        @include responsive-max-width($tablet_m) {
+            text-align: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            text-align: left;
+            margin-bottom: 10px;
+
+            @include responsive-max-width($tablet_m) {
+                text-align: center;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #c8c8cb;
+            border-bottom: 1px solid transparent;
+            transition: 0.2s all ease-out;
+        }
+
+        a:hover {
+            border-bottom: 2px solid $white;
+        }
+    }
+}

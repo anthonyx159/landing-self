@@ -1,0 +1,250 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$arrow-left-brown-name: 'arrow_left_brown';
+$arrow-left-brown-x: 38px;
+$arrow-left-brown-y: 44px;
+$arrow-left-brown-offset-x: -38px;
+$arrow-left-brown-offset-y: -44px;
+$arrow-left-brown-width: 11px;
+$arrow-left-brown-height: 18px;
+$arrow-left-brown-total-width: 98px;
+$arrow-left-brown-total-height: 62px;
+$arrow-left-brown-image: '~spritev1.3.png';
+$arrow-left-brown: (38px, 44px, -38px, -44px, 11px, 18px, 98px, 62px, '~spritev1.3.png', 'arrow_left_brown', );
+$arrow-left-white-light-name: 'arrow_left_white_light';
+$arrow-left-white-light-x: 87px;
+$arrow-left-white-light-y: 0px;
+$arrow-left-white-light-offset-x: -87px;
+$arrow-left-white-light-offset-y: 0px;
+$arrow-left-white-light-width: 11px;
+$arrow-left-white-light-height: 18px;
+$arrow-left-white-light-total-width: 98px;
+$arrow-left-white-light-total-height: 62px;
+$arrow-left-white-light-image: '~spritev1.3.png';
+$arrow-left-white-light: (87px, 0px, -87px, 0px, 11px, 18px, 98px, 62px, '~spritev1.3.png', 'arrow_left_white_light', );
+$close-name: 'close';
+$close-x: 46px;
+$close-y: 0px;
+$close-offset-x: -46px;
+$close-offset-y: 0px;
+$close-width: 21px;
+$close-height: 21px;
+$close-total-width: 98px;
+$close-total-height: 62px;
+$close-image: '~spritev1.3.png';
+$close: (46px, 0px, -46px, 0px, 21px, 21px, 98px, 62px, '~spritev1.3.png', 'close', );
+$download-brown-name: 'download_brown';
+$download-brown-x: 0px;
+$download-brown-y: 0px;
+$download-brown-offset-x: 0px;
+$download-brown-offset-y: 0px;
+$download-brown-width: 26px;
+$download-brown-height: 24px;
+$download-brown-total-width: 98px;
+$download-brown-total-height: 62px;
+$download-brown-image: '~spritev1.3.png';
+$download-brown: (0px, 0px, 0px, 0px, 26px, 24px, 98px, 62px, '~spritev1.3.png', 'download_brown', );
+$file-name: 'file';
+$file-x: 0px;
+$file-y: 44px;
+$file-offset-x: 0px;
+$file-offset-y: -44px;
+$file-width: 18px;
+$file-height: 18px;
+$file-total-width: 98px;
+$file-total-height: 62px;
+$file-image: '~spritev1.3.png';
+$file: (0px, 44px, 0px, -44px, 18px, 18px, 98px, 62px, '~spritev1.3.png', 'file', );
+$retina-arrow-left-brown-name: 'retina_arrow_left_brown';
+$retina-arrow-left-brown-x: 76px;
+$retina-arrow-left-brown-y: 88px;
+$retina-arrow-left-brown-offset-x: -76px;
+$retina-arrow-left-brown-offset-y: -88px;
+$retina-arrow-left-brown-width: 22px;
+$retina-arrow-left-brown-height: 36px;
+$retina-arrow-left-brown-total-width: 196px;
+$retina-arrow-left-brown-total-height: 124px;
+$retina-arrow-left-brown-image: '~spritev1.3@2x.png';
+$retina-arrow-left-brown: (76px, 88px, -76px, -88px, 22px, 36px, 196px, 124px, '~spritev1.3@2x.png', 'retina_arrow_left_brown', );
+$retina-arrow-left-white-light-name: 'retina_arrow_left_white_light';
+$retina-arrow-left-white-light-x: 174px;
+$retina-arrow-left-white-light-y: 0px;
+$retina-arrow-left-white-light-offset-x: -174px;
+$retina-arrow-left-white-light-offset-y: 0px;
+$retina-arrow-left-white-light-width: 22px;
+$retina-arrow-left-white-light-height: 36px;
+$retina-arrow-left-white-light-total-width: 196px;
+$retina-arrow-left-white-light-total-height: 124px;
+$retina-arrow-left-white-light-image: '~spritev1.3@2x.png';
+$retina-arrow-left-white-light: (174px, 0px, -174px, 0px, 22px, 36px, 196px, 124px, '~spritev1.3@2x.png', 'retina_arrow_left_white_light', );
+$retina-close-name: 'retina_close';
+$retina-close-x: 92px;
+$retina-close-y: 0px;
+$retina-close-offset-x: -92px;
+$retina-close-offset-y: 0px;
+$retina-close-width: 42px;
+$retina-close-height: 42px;
+$retina-close-total-width: 196px;
+$retina-close-total-height: 124px;
+$retina-close-image: '~spritev1.3@2x.png';
+$retina-close: (92px, 0px, -92px, 0px, 42px, 42px, 196px, 124px, '~spritev1.3@2x.png', 'retina_close', );
+$retina-download-brown-name: 'retina_download_brown';
+$retina-download-brown-x: 0px;
+$retina-download-brown-y: 0px;
+$retina-download-brown-offset-x: 0px;
+$retina-download-brown-offset-y: 0px;
+$retina-download-brown-width: 52px;
+$retina-download-brown-height: 48px;
+$retina-download-brown-total-width: 196px;
+$retina-download-brown-total-height: 124px;
+$retina-download-brown-image: '~spritev1.3@2x.png';
+$retina-download-brown: (0px, 0px, 0px, 0px, 52px, 48px, 196px, 124px, '~spritev1.3@2x.png', 'retina_download_brown', );
+$retina-file-name: 'retina_file';
+$retina-file-x: 0px;
+$retina-file-y: 88px;
+$retina-file-offset-x: 0px;
+$retina-file-offset-y: -88px;
+$retina-file-width: 36px;
+$retina-file-height: 36px;
+$retina-file-total-width: 196px;
+$retina-file-total-height: 124px;
+$retina-file-image: '~spritev1.3@2x.png';
+$retina-file: (0px, 88px, 0px, -88px, 36px, 36px, 196px, 124px, '~spritev1.3@2x.png', 'retina_file', );
+$spritesheet-width: 98px;
+$spritesheet-height: 62px;
+$spritesheet-image: '~spritev1.3.png';
+$spritesheet-sprites: ($arrow-left-brown, $arrow-left-white-light, $close, $download-brown, $file, );
+$spritesheet: (98px, 62px, '~spritev1.3.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 196px;
+$retina-spritesheet-height: 124px;
+$retina-spritesheet-image: '~spritev1.3@2x.png';
+$retina-spritesheet-sprites: ($retina-arrow-left-brown, $retina-arrow-left-white-light, $retina-close, $retina-download-brown, $retina-file, );
+$retina-spritesheet: (196px, 124px, '~spritev1.3@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$arrow-left-brown-group-name: 'arrow_left_brown';
+$arrow-left-brown-group: ('arrow_left_brown', $arrow-left-brown, $retina-arrow-left-brown, );
+$arrow-left-white-light-group-name: 'arrow_left_white_light';
+$arrow-left-white-light-group: ('arrow_left_white_light', $arrow-left-white-light, $retina-arrow-left-white-light, );
+$close-group-name: 'close';
+$close-group: ('close', $close, $retina-close, );
+$download-brown-group-name: 'download_brown';
+$download-brown-group: ('download_brown', $download-brown, $retina-download-brown, );
+$file-group-name: 'file';
+$file-group: ('file', $file, $retina-file, );
+$retina-groups: ($arrow-left-brown-group, $arrow-left-white-light-group, $close-group, $download-brown-group, $file-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

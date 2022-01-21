@@ -1,0 +1,49 @@
+// Colors
+$black: #000;
+$white: #fff;
+$red: #C72929;
+$cream: #fdf7f1;
+$light-cream: #ffede0;
+$lightblue: #cbeaff;
+$orange: #cf890f;
+$dark-gray: #6d7274;
+$brown: #422f21;
+$yellow: #FFCF24;
+$yellow-01: #FFF6A0;
+$green: #66A92A;
+$gray: #8A8A8A;
+$gray-01: #A0A0A0;
+$gray-02: rgba(201, 201, 201, 0.5);
+$gray-03: rgba(160, 160, 160, 0.5);
+$gray-04: #C4C4C4;
+$gray-05: #E1E1E1;
+$gray-06: #BABABA;
+
+// Layout
+$container_desktop: 1660px;
+$container: 1170px;
+$container_laptop_s: 970px;
+$container_tablet_m: 730px;
+
+// Breakpoints
+$mobile_s: 320px;
+$mobile_m: 360px;
+$mobile_l: 425px;
+$tablet_s: 640px;
+$tablet_m: 768px;
+$tablet_l: 850px;
+$laptop_s: 1024px;
+$laptop_m: 1280px;
+$desktop_s: 1440px;
+$desktop_m: 1750px;
+
+$breakpoint_list: ('ms', $mobile_s),
+('mm', $mobile_m),
+('ml', $mobile_l),
+('ts', $tablet_s),
+('tm', $tablet_m),
+('tl', $tablet_l),
+('ls', $laptop_s),
+('lm', $laptop_m),
+('ds', $desktop_s),
+('dm', $desktop_m);

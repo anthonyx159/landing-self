@@ -1,0 +1,27 @@
+
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+* {
+
+    &,
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+:focus {
+    outline: none;
+}
+
+picture {
+    display: inline-block;
+}
+
+// @include retina-sprites($retina-groups);

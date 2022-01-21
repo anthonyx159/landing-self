@@ -1,0 +1,11 @@
+.banner__container 
+    .banner__content
+        picture
+            source(media="(max-width: 768px)", srcset=( img_path + "bg-pattern-intro-mobile.svg"))
+            source(media="(min-width: 769px)", srcset=( img_path + "bg-pattern-intro-desktop.svg"))
+            img(src= (img_path + "bg-pattern-intro-desktop.svg")).banner__img
+        h1.banner__title A modern publishing platform
+        h2.banner__p Grow your audience and build your online brand
+        .banner__buttons 
+            a(href="#").button.button-start Start for free
+            a(href="#").button.button-learn Learn more

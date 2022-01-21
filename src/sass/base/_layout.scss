@@ -1,0 +1,359 @@
+.m-container {
+    margin: auto;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+
+    @include responsive-width($mobile_l) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @include responsive-width($tablet_m) {
+        padding-left: 0;
+        padding-right: 0;
+        width: $container-tablet-m;
+    }
+
+    @include responsive-width($laptop_s) {
+        width: $container-laptop-s;
+    }
+
+    @include responsive-width($laptop_m) {
+        width: $container;
+    }
+}
+
+.m-box-table {
+    display: table;
+    width: 100%;
+    height: 1px;
+
+    >* {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    &--middle {
+        >* {
+            vertical-align: middle;
+        }
+    }
+
+    &--bottom {
+        >* {
+            vertical-align: bottom;
+        }
+    }
+
+    &--fixed {
+        table-layout: fixed;
+    }
+
+    &--auto{
+        width: auto;
+    }
+    
+    &--full{
+        height: 100%;
+    }
+
+    &--margin-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.m-table {
+    display: table;
+
+    &--fixed {
+        table-layout: fixed;
+    }
+
+    &--full {
+        width: 100%;
+        height: 100%;
+    }
+
+    &--full-width {
+        width: 100%;
+    }
+
+    &__header {
+        display: table-header-group;
+    }
+
+    &__cell {
+        display: table-cell;
+        vertical-align: top;
+
+        &--middle {
+            vertical-align: middle;
+        }
+
+        &--bottom {
+            vertical-align: bottom;
+        }
+    }
+
+    &__row {
+        display: table-row;
+    }
+
+    &__body {
+        display: table-row-group;
+    }
+
+    &__footer {
+        display: table-footer-group;
+    }
+
+}
+
+.m-box-inline-block {
+    font-size: 0;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+
+    >* {
+        white-space: normal;
+        word-spacing: normal;
+        display: inline-block;
+        vertical-align: top;
+        font-size: $font-default;
+        letter-spacing: $letter_spacing;
+    }
+
+    &--middle {
+        >* {
+            vertical-align: middle;
+        }
+    }
+    
+    &--bottom {
+        >* {
+            vertical-align: bottom;
+        }
+    }
+
+    &--clear {
+        font-size: inherit;
+        letter-spacing: $letter_spacing;
+        word-spacing: normal;
+
+        >* {
+            display: block;
+        }
+    }
+}
+
+.m-inline-block {
+    display: inline-block;
+
+    &--top {
+        vertical-align: top;
+    }
+
+    &--middle {
+        vertical-align: middle;
+    }
+}
+
+.m-block {
+    display: block;
+}
+
+.m-none {
+    display: none;
+}
+
+
+@each $breakpoint_name,
+$breakpoint_value in $breakpoint_list {
+
+    .e-box-table {
+        &-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                display: table;
+                width: 100%;
+                height: 1px;
+
+                >* {
+                    display: table-cell;
+                    vertical-align: top;
+                }
+            }
+        }
+
+        &--middle-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                >* {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &--bottom-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                >* {
+                    vertical-align: bottom;
+                }
+            }
+        }
+
+        &--fixed-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                table-layout: fixed;
+            }
+        }
+
+        &--clear-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                width: auto;
+                height: auto;
+
+                &,
+                >* {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .m-table {
+        &-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                display: table;
+            }
+        }
+
+        &--fixed-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                table-layout: fixed;
+            }
+        }
+
+        &--full-width-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                width: 100%;
+            }
+        }
+
+        &__header-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                display: table-header-group;
+            }
+        }
+
+        &__cell {
+            &-#{$breakpoint_name} {
+                @include responsive-width($breakpoint_value) {
+                    display: table-cell;
+                }
+            }
+
+            &--middle-#{$breakpoint_name} {
+                @include responsive-width($breakpoint_value) {
+                    vertical-align: middle;
+                }
+            }
+
+            &--bottom-#{$breakpoint_name} {
+                @include responsive-width($breakpoint_value) {
+                    vertical-align: bottom;
+                }
+            }
+        }
+
+        &__row-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                display: table-row;
+            }
+        }
+
+        &__body-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                display: table-row-group;
+            }
+        }
+
+        &__footer-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                display: table-footer-group;
+            }
+        }
+    }
+
+    .m-box-inline-block {
+        &-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                font-size: 0;
+                letter-spacing: -1px;
+                word-spacing: -1px;
+
+                >* {
+                    font-size: $font-default;
+                    letter-spacing: $letter_spacing;
+                    white-space: normal;
+                    word-spacing: normal;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+            }
+        }
+
+        &--middle-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                >* {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &--clear-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                font-size: inherit;
+                letter-spacing: $letter_spacing;
+                word-spacing: normal;
+
+                >* {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .m-inline-block {
+        &-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                display: inline-block;
+            }
+        }
+
+        &--top-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                vertical-align: top;
+            }
+        }
+
+        &--middle-#{$breakpoint_name} {
+            @include responsive-width($breakpoint_value) {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .m-block-#{$breakpoint_name} {
+        @include responsive-width($breakpoint_value) {
+            display: block;
+        }
+    }
+
+    .m-none-#{$breakpoint_name} {
+        @include responsive-width($breakpoint_value) {
+            display: none;
+        }
+    }
+}

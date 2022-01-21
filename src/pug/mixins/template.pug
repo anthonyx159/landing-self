@@ -1,0 +1,30 @@
+mixin html_template()
+    doctype html
+    html(lang="es-PE")
+        head            
+            include ../base/head
+        //- implicit attribute class
+        body(class!=attributes.class)
+            if block
+                block
+            include ../base/foot
+
+mixin html_section_banner()
+    section.banner
+        if block 
+            block
+
+mixin html_section_section-2()
+    section.section-2
+        if block 
+            block
+
+mixin html_section_section-3()
+    section.section-3
+        if block 
+            block
+
+mixin html_section_section-4()
+    section.section-4
+        if block 
+            block

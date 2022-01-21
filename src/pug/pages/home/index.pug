@@ -1,0 +1,58 @@
+include ../../base/vars
+include ../../mixins/mixins
+include ./config
+
+-
+    title_page = 'My profile | Anthony Cahuin'
+    description = 'This is my profile'
+
++html_template
+    include ../../sections/overlay
+    include ../../sections/nav-mobile
+    include ../../sections/header
+
+    main.home
+        +html_section_banner 
+            include ../../sections/banner
+        +html_section_section-2
+            .section-2__container
+                .section-2__content 
+                    .section-2__title Designed for the future
+                    .section-2__box 
+                        .section-2__box-left
+                            .section-2__subtitle-1 Introducing an extensible editor
+                            .section-2__p-1 Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+                            .section-2__subtitle-2 Robust content management
+                            .section-2__p-2 Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                        .section-2__box-right
+                            picture
+                                source(media="(max-width: 768px)", srcset=( img_path + "illustration-editor-mobile.svg"))
+                                source(media="(min-width: 769px)", srcset=( img_path + "illustration-editor-desktop.svg"))
+                                img(src= (img_path + "illustration-editor-desktop.svg")).section-2__img
+        +html_section_section-3
+            .section-3__container 
+                .section-3__content 
+                    .section-3__img-bg
+                        img(src= img_path + "bg-pattern-circles.svg", alt="Circle")
+                    .section-3__img 
+                        img(src= img_path + "illustration-phones.svg" , alt="Celulares")
+                    .section-3__box
+                        .section-3__title State of the Art Infrastructure
+                        .section-3__p With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        +html_section_section-4
+            .section-4__container
+                .section-4__content
+                    .section-4__box 
+                        .section-4__box-left
+                            .section-4__subtitle-1 Free, open, simple
+                            .section-4__p-1 Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                            .section-4__subtitle-2 Powerful tooling
+                            .section-4__p-2 Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+                        .section-4__box-right
+                            picture
+                                source(media="(max-width: 768px)", srcset=( img_path + "illustration-laptop-mobile.svg"))
+                                source(media="(min-width: 769px)", srcset=( img_path + "illustration-laptop-desktop.svg"))
+                                img(src= (img_path + "illustration-laptop-desktop.svg")).section-4__img
+        include ../../sections/footer
+
+script(src="../../../js/index.js")

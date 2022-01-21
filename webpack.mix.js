@@ -24,12 +24,12 @@ function mix_multiple(folder,method,srcExt,outputExt) {
     }
 }
 
-mix_multiple("src/sass/","sass","scss","css");
+mix_multiple("src/sass/pages/home/","sass","scss","css");
 mix_multiple("src/js/","js","js","js");
 
 mix
     .copy('src/images/static/*', "dist/images/static")
-    .pug('src/pug/*.pug', '../../dist', {
+    .pug('src/pug/pages/home/*.pug', '../../../../dist', {
         pug: {
             pretty: false,
             debug: false
