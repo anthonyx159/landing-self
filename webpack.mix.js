@@ -35,5 +35,6 @@ mix
             debug: false
         }
     })
+    .options({ processCssUrls: false })
     .setPublicPath('dist')
     .disableSuccessNotifications();
