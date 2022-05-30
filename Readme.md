@@ -1,5 +1,8 @@
 # Skeleton Mix
 
+## Link del proyecto
+- <https://anthonyx159.github.io/landing-self/>
+
 ## Proyecto con Mix (webpack wrapper)
 
 Lee la documentación aqui: https://laravel-mix.com/docs/5.0
